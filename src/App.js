@@ -2,6 +2,7 @@ import React from 'react';
 import { Canvas } from 'react-three-fiber';
 import './App.scss';
 import Cube from './components/3d/Cube';
+import Line from './components/3d/Line';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         }}
       >
         <Cube />
+        <Line />
       </Canvas>
     </div>
   );
