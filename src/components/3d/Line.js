@@ -10,7 +10,6 @@ points.push(new THREE.Vector3(10, 0, 0));
 
 const geometry = new THREE.BufferGeometry().setFromPoints(points);
 
-
 export default function Line() {
   return (
     <line
