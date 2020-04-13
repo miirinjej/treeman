@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { Canvas } from 'react-three-fiber';
 import './App.scss';
 import Cube from './components/3d/Cube';
 import Line from './components/3d/Line';
+import Text from './components/3d/Text';
 
 function App() {
   return (
@@ -17,6 +18,11 @@ function App() {
       >
         <Cube />
         <Line />
+        <Suspense fallback={null}>
+          <Text size={2}>
+            Hello, world!
+          </Text>
+        </Suspense>
       </Canvas>
     </div>
   );
