@@ -4,6 +4,7 @@ import './App.scss';
 import Cube from './components/3d/Cube';
 import Line from './components/3d/Line';
 import Text from './components/3d/Text';
+import Tetrahedron from './components/3d/Tetrahedron';
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
           <Text size={2}>
             Hello, world!
           </Text>
+        </Suspense>
+        <Suspense fallback={null}>
+          <Tetrahedron />
         </Suspense>
       </Canvas>
     </div>
